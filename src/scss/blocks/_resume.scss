@@ -1,0 +1,133 @@
+.resume {
+    padding-top: 6px;
+    margin-bottom: calc(120px - 45px);
+
+    // .resume__subtitle
+    &__subtitle {
+        margin-bottom: 6px;
+        text-align: center;
+        @include before_circle;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    // .resume__title
+    &__title {
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    .devider {
+        margin: 0 auto 60px;
+    }
+
+    // .resume__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        grid-template-rows: auto;
+        column-gap: 136px;
+        justify-content: center;
+    }
+    // .resume__column
+    &__column {
+        padding-left: 50px;
+        position: relative;
+        
+        & > div {
+            position: relative;
+            
+            &::after {
+                content: '';
+                width: 1px;
+                height: calc(100% - 30px);
+                background-color: #000;
+    
+                position: absolute;
+                top: -52px;
+                top: 24px;
+                left: -43px;
+            }
+        }
+
+    }
+    // .resume__column-title
+    &__column-title {
+        margin-bottom: 45px;
+        @include before_circle;
+        position: static;
+        &::before {
+            width: 15px;
+            height: 15px;
+            top: 9px;
+            left: -50px;
+            z-index: 2;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    // .resume__item
+    &__item {
+        margin-bottom: 45px;
+    }
+    // .resume__item-head
+    &__item-head {
+        padding-left: 56px;
+        @include before_circle;
+        &::before {
+            top: 0;
+
+        }
+        &::after {
+            content: '';
+            width: 42px;
+            height: 1px;
+            background-color: #000;
+
+            position: absolute;
+            top: 18px;
+            left: -42px;
+        }
+    }
+    // .resume__item-icon
+    &__item-icon {
+        position: absolute;
+        top: 14px;
+        left: 18px;
+
+        &_courses {
+            top: 16px;
+            left: 15px;
+        }
+        &_dev {
+            top: 14px;
+            left: 17px;
+        }
+        &_disign {
+            top: 15px;
+            left: 13px;
+        }
+    }
+    // .resume__item-title
+    &__item-title {
+        margin-bottom: 0;
+    }
+    // .resume__item-descr
+    &__item-descr {
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    // .resume__body
+    &__item-body {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
