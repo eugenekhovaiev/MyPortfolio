@@ -20,4 +20,12 @@ window.addEventListener('DOMContentLoaded', () => {
             burger.classList.toggle('burger_out');
         });
     });
+
+    const percent = document.querySelectorAll('.progress__percent'),
+          scales = document.querySelectorAll('.progress__scale');
+
+    percent.forEach((item, i) => {
+        scales[i].style.width = item.innerHTML;
+        // console.log(i);
+    });
 });
