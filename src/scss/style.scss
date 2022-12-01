@@ -23,7 +23,13 @@
     width: 60px;
     height: 3px;
     background-color: $main-color;
+
+    &_central {
+        margin: 0 auto 60px;
+    }
 }
+
+
 
 @import 'blocks/promo';
 @import 'blocks/titles';
@@ -34,5 +40,7 @@
 @import 'blocks/resume';
 @import 'blocks/tools';
 @import 'blocks/progress';
+@import 'blocks/portfolio';
+@import 'blocks/prices';
 
 @import 'base/media';

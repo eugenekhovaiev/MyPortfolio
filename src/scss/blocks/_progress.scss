@@ -14,6 +14,7 @@
         display: grid;
         grid-template-columns: auto 34px;
         grid-template-rows: auto 14px;
+        row-gap: 27px;
     }
     // .progress__title
     &__title {

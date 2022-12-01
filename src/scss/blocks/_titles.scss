@@ -27,4 +27,19 @@
         font-size: 48px;
         line-height: 60px;
     }
+
+    &_central-subtitle {
+        margin-bottom: 6px;
+        text-align: center;
+        @include before_circle;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &_central-title {
+        margin-bottom: 22px;
+        text-align: center;
+    }
 }
