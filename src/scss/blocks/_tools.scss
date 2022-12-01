@@ -1,0 +1,56 @@
+.tools {
+    padding-top: 6px;
+    margin-bottom: 120px;
+
+    // .tools__subtitle
+    &__subtitle {
+        margin-bottom: 6px;
+        text-align: center;
+        @include before_circle;
+        &::before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    // .tools__title
+    &__title {
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    .devider {
+        margin: 0 auto 60px;
+    }
+
+    // .tools__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        gap: 13px;
+        justify-content: center;
+    }
+    // .tools__card
+    &__card {
+        padding: 0px 40px 0px 30px;
+        border: 1px solid #000;
+    }
+    // .tools__icon
+    &__icon {
+        height: 115px;
+        display: flex;
+        align-items: center;
+    }
+    // .tools__card-title
+    &__card-title {
+        margin-bottom: 15px;
+    }
+    // .tools__descr
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
