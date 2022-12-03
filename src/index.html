@@ -444,18 +444,26 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="message" id="message"></textarea>
+                            <textarea required name="message" id="message"></textarea>
                             <label for="message">Ваше сообщение</label>
                         </div>
-                        <button class="btn">Отправить сообщение</button>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Отправить сообщение</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span class="contacts__agree">
+                                    Я согласен(а) с <a target="_blank" href="/policy.html">политикой конфиденциальности</a>
+                                </span>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
