@@ -8,6 +8,8 @@
     }
     // .prices__wrapper
     &__wrapper {
+        padding: 0 50px 0;
+
         display: grid;
         grid-template-columns: repeat(2, 370px);
         grid-template-rows: repeat(3, minmax(44px, auto));
