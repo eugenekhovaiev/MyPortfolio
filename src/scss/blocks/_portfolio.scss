@@ -2,26 +2,6 @@
     padding-top: 6px;
     margin-bottom: 60px;
 
-    // // .portfolio__subtitle
-    // &__subtitle {
-    //     margin-bottom: 6px;
-    //     text-align: center;
-    //     @include before_circle;
-    //     &::before {
-    //         left: 50%;
-    //         transform: translateX(-50%);
-    //     }
-    // }
-    // // .portfolio__title
-    // &__title {
-    //     margin-bottom: 22px;
-    //     text-align: center;
-    // }
-
-    // .devider {
-    //     margin: 0 auto 60px;
-    // }
-
     // .portfolio__wrapper
     &__wrapper {
         display: grid;
@@ -42,6 +22,8 @@
 
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         &_big-vert {
