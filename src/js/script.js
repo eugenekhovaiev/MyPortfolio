@@ -2,7 +2,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
           burger = document.querySelector('.burger'),
           menuItem = document.querySelectorAll('.menu__link'),
-          close = document.querySelector('.menu__close');
+          close = document.querySelector('.menu__close'),
+          overlay = document.querySelector('.menu__overlay');
 
     burger.addEventListener('click', () => {
         menu.classList.toggle('menu_active');
@@ -10,6 +11,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     close.addEventListener('click', () => {
+        menu.classList.toggle('menu_active');
+        burger.classList.toggle('burger_out');
+    });
+
+    overlay.addEventListener('click', () => {
         menu.classList.toggle('menu_active');
         burger.classList.toggle('burger_out');
     });

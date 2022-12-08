@@ -4,7 +4,7 @@
     // .about__wrapper
     &__wrapper {
         display: grid;
-        grid-template-columns: 400px 570px;
+        grid-template-columns: 400px minmax(auto, 570px);
         grid-template-rows: minmax(243px, auto) auto;
         grid-auto-rows: minmax(243px, auto);
         column-gap: 70px;
@@ -35,9 +35,11 @@
     &__title {
         margin-bottom: 1px;
     }
+    
     .devider {
         margin-bottom: 20px;
     }
+    
     // .about__text
     &__text {
         // margin-bottom: 40px;
@@ -51,7 +53,7 @@
         margin-bottom: auto;
         margin-right: auto;
         display: grid;
-        grid-template-columns: repeat(2, 260px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         // or grid-template-rows: repeat(2, minmax(115px, auto));
         grid-auto-rows: auto;
@@ -62,7 +64,7 @@
 
 .skill-card {
     display: grid;
-    grid-template-columns: 40px 200px;
+    grid-template-columns: 40px auto;
     grid-template-rows: auto;
     column-gap: 20px;
 
@@ -83,6 +85,7 @@
     // .skill-card__title
     &__title {
         margin-bottom: 6px;
+        width: 100%;
     }
     // .skill-card__text
     &__text {

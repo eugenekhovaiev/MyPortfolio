@@ -23,12 +23,13 @@
     // .promo__btns
     &__btns {
         display: flex;
-        width: 253px;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
+        width: 100%;
     }
     // .promo__link
     &__link {
+        margin-right: 39px;
         color: #000;
         text-decoration: none;
         font-weight: 700;
