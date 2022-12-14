@@ -49,14 +49,15 @@
 
         &__skills {
             grid-template-columns: auto;
-            gap: 30px 36px;
+            gap: 20px 36px;
         }
     }
 }
 
 @media (max-width: 767px) {
     .container {
-        max-width: 540px;
+        max-width: 100vw;
+        padding: 0 10px;
     }
 
     .title {
@@ -67,10 +68,30 @@
     }
 
     .promo {
+        margin-bottom: 40px;
+
         &__title {
             font-size: 26px;
             line-height: 39px;
             width: 300px;
+        }
+    }
+
+    .about {
+        &__wrapper {
+            grid-template-columns: auto;
+            grid-template-rows: minmax(auto, 400px) auto auto;
+            row-gap: 20px;
+        }
+
+        &__photo {
+            margin-bottom: 20px;
+            grid-row: unset;
+        }
+
+        &__skills {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 36px;
         }
     }
 }
@@ -79,6 +100,13 @@
     .container {
         max-width: 100vw;
         padding: 0 10px;
+    }
+
+    .title {
+        &_fz36 {
+            font-size: 24px;
+            line-height: 36px;
+        }
     }
 
     .burger {
@@ -98,5 +126,31 @@
 
     .promo {
         background-position-x: 58%;
+    }
+
+    .about {
+        &__wrapper {
+            grid-template-columns: auto;
+            grid-template-rows: minmax(auto, 340px) auto auto;
+            row-gap: 20px;
+        }
+
+        &__photo {
+            margin-bottom: 20px;
+            grid-row: unset;
+        }
+
+        &__subtitle {
+            margin-bottom: 26px;
+        }
+
+        &__title {
+            margin-bottom: 12px;
+        }
+
+        &__skills {
+            grid-template-columns: 1fr;
+            gap: 40px 36px;
+        }
     }
 }
