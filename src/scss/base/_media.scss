@@ -20,6 +20,24 @@
             gap: 30px 36px;
         }
     }
+
+    .resume {
+        &__wrapper {
+            column-gap: 80px;
+        }
+    }
+
+    .tools {
+        &__wrapper {
+            grid-template-columns: repeat(3,270px);
+        }
+    }
+
+    .progress {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -30,6 +48,16 @@
     .title {
         &_fz36 {
             font-size: 30px;
+        }
+    
+        &_central-title {
+            margin-bottom: 1px;
+        }
+    }
+
+    .devider {
+        &_central {
+            margin-bottom: 40px;
         }
     }
 
@@ -50,6 +78,26 @@
         &__skills {
             grid-template-columns: auto;
             gap: 20px 36px;
+        }
+    }
+
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 333px);
+            column-gap: 55px;
+        }
+    }
+
+    .tools {
+        &__wrapper {
+            grid-template-columns: repeat(2,270px);
+        }
+    }
+
+    .progress {
+        &__wrapper {
+            grid-template-columns: repeat(2, minmax(auto, 300px));
+            justify-content: center;
         }
     }
 }
@@ -78,6 +126,8 @@
     }
 
     .about {
+        margin-bottom: 60px;
+
         &__wrapper {
             grid-template-columns: auto;
             grid-template-rows: minmax(auto, 400px) auto auto;
@@ -94,6 +144,27 @@
             gap: 40px 36px;
         }
     }
+
+    .resume {
+        margin-bottom: 20px;
+
+        &__wrapper {
+            grid-template-columns: 425px;
+            column-gap: 55px;
+        }
+    }
+
+    .tools {
+        margin-bottom: 60px;
+    }
+
+    .progress {
+        margin-bottom: 60px;
+
+        &__wrapper {
+            column-gap: 35px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -106,6 +177,14 @@
         &_fz36 {
             font-size: 24px;
             line-height: 36px;
+        }
+
+        &_central-subtitle {
+            margin-bottom: 26px;
+        }
+    
+        &_central-title {
+            margin-bottom: 12px;
         }
     }
 
@@ -129,6 +208,8 @@
     }
 
     .about {
+        margin-bottom: 60px;
+
         &__wrapper {
             grid-template-columns: auto;
             grid-template-rows: minmax(auto, 340px) auto auto;
@@ -151,6 +232,45 @@
         &__skills {
             grid-template-columns: 1fr;
             gap: 40px 36px;
+        }
+    }
+
+    .resume {
+        margin-bottom: 30px;
+
+        &__wrapper {
+            grid-template-columns: minmax(auto, 425px);
+            // grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+
+        &__item {
+            margin-bottom: 15px;
+
+            &-head {
+                width: 98%;
+            }
+        }
+    }
+
+    .tools {
+        margin-bottom: 40px;
+
+        .devider {
+            margin-bottom: 20px;
+        }
+
+        &__wrapper {
+            grid-template-columns: 270px;
+            gap: 20px;
+        }
+    }
+
+    .progress {
+        margin-bottom: 40px;
+
+        &__wrapper {
+            grid-template-columns: minmax(auto, 350px);            row-gap: 40px;
         }
     }
 }
