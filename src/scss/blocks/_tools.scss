@@ -5,7 +5,7 @@
     // .tools__wrapper
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 270px);
+        grid-template-columns: repeat(auto-fit, 270px);
         grid-template-rows: repeat(2, minmax(270px, auto));
         grid-auto-rows: minmax(270px, auto);
         gap: 13px;

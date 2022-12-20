@@ -107,7 +107,11 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
+                    <picture>
+                    <source media="(max-width: 575px)" srcset="img/girl_min.jpg">
+                    <source media="(min-width: 576px)" srcset="img/girl.jpg">
                     <img src="img/girl.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__subtitle">Про меня</h2>
@@ -351,7 +355,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title_central-subtitle">Портфолио</h2>
             <div class="title title_fz36 title_central-title">Мои работы</div>
@@ -377,9 +381,9 @@
                 </a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="prices">
+    <section class="prices">
         <div class="container">
             <h2 class="title title_fz16 title_central-subtitle">Прайс-лист</h2>
             <div class="devider devider_central"></div>
@@ -416,9 +420,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -468,7 +472,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 </body>
