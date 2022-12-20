@@ -53,6 +53,18 @@
         }
     }
 
+    .contacts {
+        &__triggers {
+            grid-template-columns: 210px auto;
+            gap: 20px;
+        }
+
+        &__policy {
+            input {
+                margin-right: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -132,6 +144,11 @@
 
         &__photo {
             display: none;
+        }
+
+        &__triggers {
+            grid-template-columns: 219px auto;
+            gap: 35px;
         }
     }
 }
